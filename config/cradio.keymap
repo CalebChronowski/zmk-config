@@ -39,10 +39,10 @@
         };
         nav {
             bindings = <
-&ht ESC undefined         &none  &kp C_AC_UNDO    &kp C_AC_REDO      &kp PG_UP    &kp HOME    &kp C_AC_BACK        &kp UP  &kp C_AC_FORWARD  &none
-     &kp LEFT_GUI  &kp LEFT_ALT      &kp LCTRL   &kp LEFT_SHIFT  &kp PAGE_DOWN  &kp C_MUTE         &kp LEFT      &kp DOWN         &kp RIGHT  &none
-            &none  &kp C_AC_CUT  &kp C_AC_COPY  &kp PRINTSCREEN          &none       &none  &kp C_VOLUME_UP  &kp C_VOL_DN             &none  &none
-                                                         &trans         &trans      &trans            &none
+	&kp ESC		&none		&kp C_AC_UNDO	&kp C_AC_REDO	&kp PG_UP	&kp HOME	&kp C_AC_BACK	&kp UP		&kp C_AC_FORWARD	&none
+	&kp LEFT_GUI	&kp LEFT_ALT	&kp LCTRL	&kp LEFT_SHIFT	&kp PAGE_DOWN	&kp C_MUTE	&kp LEFT	&kp DOWN	&kp RIGHT  		&none
+	&none		&kp C_AC_CUT	&kp C_AC_COPY	&kp PRINTSCREEN	&none		&none		&kp C_VOLUME_UP	&kp C_VOL_DN	&none			&none
+									&trans		&trans		&trans		&none
             >;
         };
         num {
