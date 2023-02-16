@@ -59,7 +59,7 @@
         
         base {
             bindings = <
-		&ht Q ESC	&kp W		&kp F		&kp P			&kp B			&kp J			&kp L			&kp U		&kp Y			&kp SEMICOLON
+		&ht ESC Q	&kp W		&kp F		&kp P			&kp B			&kp J			&kp L			&kp U		&kp Y			&kp SEMICOLON
 		&mt LEFT_GUI A	&mt LALT R	&mt LCTL S	&mt LEFT_SHIFT T	&kp G			&kp M			&mt RIGHT_SHIFT N 	&mt LCTRL E	&mt LALT I		&mt LEFT_GUI O
 		&kp Z		&kp X		&kp C		&kp D			&kp V			&kp K			&kp H			&kp COMMA	&kp PERIOD		&kp FSLH
                          					&kp TAB			&lt 2 ENTER  		&lt 1 SPACE		&kp BACKSPACE
