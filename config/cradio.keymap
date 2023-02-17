@@ -37,7 +37,7 @@
 	};
     
     
-	combo_qwerty {
+	combo_practice {
             timeout-ms = <50>;
             key-positions = <0 1 8 9>;
             bindings = <&tog 5>;
@@ -96,7 +96,7 @@
             >;
         };
         
-        
+
         bt {
             bindings = <
 		&reset		&bootloader	&none		&none			&none			&none			&none			&none		&bootloader		&reset
@@ -107,12 +107,12 @@
         };
         
         
-        qwerty {
+	practice {
             bindings = <
 		&kp Q		&kp W		&kp E		&kp R			&kp T			&kp Y			&kp U			&kp I		&kp O			&kp P
-		&mt LEFT_GUI A	&mt LEFT_ALT S	&mt LCTRL D	&mt LEFT_SHIFT F	&kp G			&kp H			&mt RIGHT_SHIFT J	&mt RCTRL K	&mt RIGHT_ALT L		&mt LEFT_GUI SEMI
+		&kp A		&kp S		&kp D		&kp F			&kp G			&kp H			&kp J			&kp K		&kp L			&kp SEMI
 		&kp Z		&kp X		&kp C		&kp V			&kp B			&kp N			&kp M			&kp COMMA	&kp PERIOD		&kp SLASH
-								&kp TAB			&kp ENTER		&kp SPACE		&kp BACKSPACE
+								&kp TAB			&lt 2 ENTER		&lt 1 SPACE		&kp BACKSPACE
             >;
         };
     };
