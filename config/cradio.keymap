@@ -62,9 +62,9 @@
         
         nav {
             bindings = <
-		&kp ESC		&none		&none		&none			&kp LA(F4)		&kp HOME		&kp PG_DN	&kp PG_UP	&kp none	&kp C_VOL_UP
+		&kp ESC		&none		&none		&none			&kp LA(F4)		&kp HOME		&kp PG_DN	&kp PG_UP	&none	&kp C_VOL_UP
 		&kp TAB		&kp LALT	&kp LCTRL	&kp LGUI		&none			&kp LEFT		&kp DOWN	&kp UP		&kp RIGHT  	&kp C_MUTE
-		&kp INS		&kp RALT	&kp none	&kp PSCRN		&kp LS(LA(INS))		&kp END			&kp none	&none		&none		&kp C_VOL_DN
+		&kp INS		&kp RALT	&none		&kp PSCRN		&kp LS(LA(INS))		&kp END			&none		&none		&none		&kp C_VOL_DN
 								&trans			&trans			&trans			&kp DEL
             >;
         };
