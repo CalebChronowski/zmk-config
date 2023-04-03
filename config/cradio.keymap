@@ -35,13 +35,6 @@
 	    key-positions = <16 17 18 19>;
 	    bindings = <&tog 4>;
 	};
-    
-    
-	combo_practice {
-            timeout-ms = <50>;
-            key-positions = <0 1 8 9>;
-            bindings = <&tog 5>;
-        };
     };
 
 
@@ -60,7 +53,7 @@
         base {
             bindings = <
 		&ht ESC Q	&kp W		&kp F		&kp P			&kp B			&kp J			&kp L			&kp U		&kp Y			&kp SEMICOLON
-		&mt TAB A	&mt LALT R	&mt LCTL S	&mt LEFT_GUI T		&kp G			&kp M			&mt RIGHT_GUI N 	&mt LCTRL E	&mt LALT I		&mt TAB O
+		&mt TAB A	&mt LALT R	&mt LCTL S	&mt LGUI T		&kp G			&kp M			&mt RGUI N	 	&mt LCTRL E	&mt LALT I		&mt TAB O
 		&kp Z		&kp X		&kp C		&kp D			&kp V			&kp K			&kp H			&kp COMMA	&kp PERIOD		&kp FSLH
                          					&lt 2 ENTER		&lt 1 SPACE		&kp SHIFT		&kp BACKSPACE
             >;
