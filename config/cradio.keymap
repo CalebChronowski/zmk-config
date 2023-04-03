@@ -60,7 +60,7 @@
         base {
             bindings = <
 		&ht ESC Q	&kp W		&kp F		&kp P			&kp B			&kp J			&kp L			&kp U		&kp Y			&kp SEMICOLON
-		&mt TAB A	&mt LALT R	&mt LCTL S	&mt LEFT_GUI		&kp G			&kp M			&mt RIGHT_GUI N 	&mt LCTRL E	&mt LALT I		&mt TAB O
+		&mt TAB A	&mt LALT R	&mt LCTL S	&mt LEFT_GUI T		&kp G			&kp M			&mt RIGHT_GUI N 	&mt LCTRL E	&mt LALT I		&mt TAB O
 		&kp Z		&kp X		&kp C		&kp D			&kp V			&kp K			&kp H			&kp COMMA	&kp PERIOD		&kp FSLH
                          					&lt 2 ENTER		&lt 1 SPACE		&kp SHIFT		&kp BACKSPACE
             >;
@@ -79,10 +79,10 @@
         
         num {
             bindings = <
-		&ht GRAVE ESC	&none		&none		&none			&none			&kp RIGHT_BRACKET	&kp N7			&kp N8		&kp N9			&kp APOS
+		&kp ESC		&none		&kp GRAVE	&kp MINUS		&none			&kp RIGHT_BRACKET	&kp N7			&kp N8		&kp N9			&kp APOS
 		&kp TAB		&kp LALT	&kp LCTRL	&kp LGUI		&none			&kp LEFT_BRACKET	&kp N4			&kp N5		&kp N6			&kp N0
 		&none		&kp RALT	&none           &none			&none			&kp EQUAL		&kp N1			&kp N2		&kp N3			&kp PIPE
-								&trans			&lt 1 MINUS		&trans			&kp DELETE
+								&trans			&trans			&trans			&kp DELETE
             >;
         };
         
@@ -91,7 +91,7 @@
             bindings = <
 		&kp ESC		&none		&kp UP		&none			&none			&none			&kp F7			&kp F8		&kp F9			&none
 		&kp CTRL	&kp LEFT	&kp DOWN	&kp RIGHT		&kp LGUI		&kp LGUI		&kp F4			&kp F5		&kp F6			&kp F10
-		&none		&none		&none		&none			&none			&none			&ht F1 F11		&ht F2 F12	&kp F3			&none
+		&none		&none		&none		&none			&none			&none			&ht F11 F1		&ht F12 F2	&kp F3			&none
 								&trans			&trans			&trans			&kp DELETE
             >;
         };
