@@ -52,20 +52,20 @@
         
         base {
             bindings = <
-		&ht ESC Q	&kp W		&kp F		&kp P			&kp B			&kp J			&kp L			&kp U		&kp Y			&kp SEMICOLON
+		&ht ESC Q	&kp W		&kp F		&kp P			&kp B			&kp J			&kp L			&kp U		&kp Y			&kp SEMI
 		&mt TAB A	&mt LALT R	&mt LCTL S	&mt LGUI T		&kp G			&kp M			&mt RGUI N	 	&mt LCTRL E	&mt LALT I		&mt TAB O
 		&kp Z		&kp X		&kp C		&kp D			&kp V			&kp K			&kp H			&kp COMMA	&kp PERIOD		&kp FSLH
-                         					&lt 2 ENTER		&lt 1 SPACE		&kp SHIFT		&kp BACKSPACE
+                         					&lt 2 RET		&lt 1 SPACE		&kp LSHFT		&kp BSPC
             >;
         };
         
         
         nav {
             bindings = <
-		&kp ESC		&none		&kp C_AC_UNDO	&kp C_AC_REDO		&none			&kp PG_UP		&kp C_AC_BACK		&kp UP		&kp C_AC_FORWARD	&none
-		&kp TAB		&kp LEFT_ALT	&kp LCTRL	&kp LGUI		&none			&kp PG_DN		&kp LEFT		&kp DOWN	&kp RIGHT  		&kp C_MUTE
-		&kp INS		&kp C_AC_CUT	&kp C_AC_COPY	&kp PRINTSCREEN		&kp C_AC_PASTE		&kp HOME		&kp C_VOL_DN		&kp C_VOL_UP	&none			&none
-								&trans			&trans			&trans			&kp DELETE
+		&kp ESC		&none		&kp C_AC_UNDO	&kp C_AC_REDO		&kp LA(F4)		&kp HOME		&kp PG_DN	&kp PG_UP		&kp none	&kp C_VOL_UP
+		&kp TAB		&kp LALT	&kp LCTRL	&kp LGUI		&none			&kp LEFT		&kp DOWN	&kp UP			&kp RIGHT  	&kp C_MUTE
+		&kp INS		&kp RALT	&kp none	&kp PRINTSCREEN		&kp LS(LA(INS))		&kp END			&kp C_AC_BACK	&kp C_AC_FORWARD	&none		&kp C_VOL_DOWN
+								&trans			&trans			&trans			&kp DEL
             >;
         };
         
@@ -75,7 +75,7 @@
 		&kp ESC		&none		&kp GRAVE	&kp MINUS		&none			&kp RIGHT_BRACKET	&kp N7			&kp N8		&kp N9			&kp APOS
 		&kp TAB		&kp LALT	&kp LCTRL	&kp LGUI		&none			&kp LEFT_BRACKET	&kp N4			&kp N5		&kp N6			&kp N0
 		&none		&kp RALT	&none           &none			&none			&kp EQUAL		&kp N1			&kp N2		&kp N3			&kp PIPE
-								&trans			&trans			&trans			&kp DELETE
+								&trans			&trans			&trans			&kp DEL
             >;
         };
         
@@ -88,6 +88,8 @@
 								&trans			&trans			&trans			&kp DELETE
             >;
         };
+            >;
+        };
         
 
         bt {
@@ -98,7 +100,5 @@
 								&none			&none			&none			&bt BT_CLR
             >;
         };
-        
-        
     };
 };
