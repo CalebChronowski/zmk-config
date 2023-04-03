@@ -62,9 +62,9 @@
         
         nav {
             bindings = <
-		&kp ESC		&none		&kp C_AC_UNDO	&kp C_AC_REDO		&kp LA(F4)		&kp HOME		&kp PG_DN	&kp PG_UP		&kp none	&kp C_VOL_UP
-		&kp TAB		&kp LALT	&kp LCTRL	&kp LGUI		&none			&kp LEFT		&kp DOWN	&kp UP			&kp RIGHT  	&kp C_MUTE
-		&kp INS		&kp RALT	&kp none	&kp PRINTSCREEN		&kp LS(LA(INS))		&kp END			&kp C_AC_BACK	&kp C_AC_FORWARD	&none		&kp C_VOL_DOWN
+		&kp ESC		&none		&none		&kp none		&kp LA(F4)		&kp HOME		&kp PG_DN	&kp PG_UP	&kp none	&kp C_VOL_UP
+		&kp TAB		&kp LALT	&kp LCTRL	&kp LGUI		&none			&kp LEFT		&kp DOWN	&kp UP		&kp RIGHT  	&kp C_MUTE
+		&kp INS		&kp RALT	&kp none	&kp PSCRN		&kp LS(LA(INS))		&kp END			&kp none	&none		&none		&kp C_VOL_DN
 								&trans			&trans			&trans			&kp DEL
             >;
         };
@@ -85,7 +85,7 @@
 		&kp ESC		&none		&kp UP		&none			&none			&none			&kp F7			&kp F8		&kp F9			&none
 		&kp CTRL	&kp LEFT	&kp DOWN	&kp RIGHT		&kp LGUI		&kp LGUI		&kp F4			&kp F5		&kp F6			&kp F10
 		&none		&none		&none		&none			&none			&none			&ht F11 F1		&ht F12 F2	&kp F3			&none
-								&trans			&trans			&trans			&kp DELETE
+								&trans			&trans			&trans			&kp DEL
             >;
         };
         
