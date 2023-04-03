@@ -60,9 +60,9 @@
         base {
             bindings = <
 		&ht ESC Q	&kp W		&kp F		&kp P			&kp B			&kp J			&kp L			&kp U		&kp Y			&kp SEMICOLON
-		&mt LEFT_GUI A	&mt LALT R	&mt LCTL S	&mt LEFT_SHIFT T	&kp G			&kp M			&mt RIGHT_SHIFT N 	&mt LCTRL E	&mt LALT I		&mt LEFT_GUI O
+		&mt TAB A	&mt LALT R	&mt LCTL S	&mt LEFT_GUI		&kp G			&kp M			&mt RIGHT_GUI N 	&mt LCTRL E	&mt LALT I		&mt TAB O
 		&kp Z		&kp X		&kp C		&kp D			&kp V			&kp K			&kp H			&kp COMMA	&kp PERIOD		&kp FSLH
-                         					&kp TAB			&lt 2 ENTER  		&lt 1 SPACE		&kp BACKSPACE
+                         					&lt 2 ENTER		&lt 1 SPACE		&kp SHIFT		&kp BACKSPACE
             >;
         };
         
@@ -70,9 +70,9 @@
         nav {
             bindings = <
 		&kp ESC		&none		&kp C_AC_UNDO	&kp C_AC_REDO		&none			&kp PG_UP		&kp C_AC_BACK		&kp UP		&kp C_AC_FORWARD	&none
-		&kp LEFT_GUI	&kp LEFT_ALT	&kp LCTRL	&kp LEFT_SHIFT		&none			&kp PG_DN		&kp LEFT		&kp DOWN	&kp RIGHT  		&kp C_MUTE
-		&none		&kp C_AC_CUT	&kp C_AC_COPY	&kp PRINTSCREEN		&kp C_AC_PASTE		&kp HOME		&kp C_VOL_DN		&kp C_VOL_UP	&none			&none
-								&trans			&trans			&trans			&none
+		&kp TAB		&kp LEFT_ALT	&kp LCTRL	&kp LGUI		&none			&kp PG_DN		&kp LEFT		&kp DOWN	&kp RIGHT  		&kp C_MUTE
+		&kp INS		&kp C_AC_CUT	&kp C_AC_COPY	&kp PRINTSCREEN		&kp C_AC_PASTE		&kp HOME		&kp C_VOL_DN		&kp C_VOL_UP	&none			&none
+								&trans			&trans			&trans			&kp DELETE
             >;
         };
         
@@ -80,19 +80,19 @@
         num {
             bindings = <
 		&ht GRAVE ESC	&none		&none		&none			&none			&kp RIGHT_BRACKET	&kp N7			&kp N8		&kp N9			&kp APOS
-		&kp LGUI	&kp LALT	&kp LCTRL	&kp LEFT_SHIFT		&none			&kp LEFT_BRACKET	&kp N4			&kp N5		&kp N6			&kp EQUAL
-		&none		&kp RALT	&none           &none			&none			&kp N0			&kp NUMBER_1		&kp N2		&kp N3			&kp PIPE
-								&none			&trans			&lt 1 MINUS		&kp DELETE
+		&kp TAB		&kp LALT	&kp LCTRL	&kp LGUI		&none			&kp LEFT_BRACKET	&kp N4			&kp N5		&kp N6			&kp N0
+		&none		&kp RALT	&none           &none			&none			&kp EQUAL		&kp N1			&kp N2		&kp N3			&kp PIPE
+								&trans			&lt 1 MINUS		&trans			&kp DELETE
             >;
         };
         
         
         fn {
             bindings = <
-		&kp ESC		&none		&none		&none			&none			&none			&kp F7			&kp F8		&kp F9			&kp F10
-		&kp LEFT_META	&kp LALT	&kp LCTRL	&kp LEFT_SHIFT		&none			&none			&kp F4			&kp F5		&kp F6			&none
-		&none		&kp RALT	&none		&none			&none			&none			&ht F1 F11		&ht F2 F12	&kp F3			&none
-								&none			&trans			&trans			&none
+		&kp ESC		&none		&kp UP		&none			&none			&none			&kp F7			&kp F8		&kp F9			&none
+		&kp CTRL	&kp LEFT	&kp DOWN	&kp RIGHT		&kp LGUI		&kp LGUI		&kp F4			&kp F5		&kp F6			&kp F10
+		&none		&none		&none		&none			&none			&none			&ht F1 F11		&ht F2 F12	&kp F3			&none
+								&trans			&trans			&trans			&kp DELETE
             >;
         };
         
@@ -107,13 +107,5 @@
         };
         
         
-	practice {
-            bindings = <
-		&kp Q		&kp W		&kp E		&kp R			&kp T			&kp Y			&kp U			&kp I		&kp O			&kp P
-		&kp A		&kp S		&kp D		&kp F			&kp G			&kp H			&kp J			&kp K		&kp L			&kp SEMI
-		&kp Z		&kp X		&kp C		&kp V			&kp B			&kp N			&kp M			&kp COMMA	&kp PERIOD		&kp SLASH
-								&kp TAB			&lt 2 ENTER		&lt 1 SPACE		&kp BACKSPACE
-            >;
-        };
     };
 };
