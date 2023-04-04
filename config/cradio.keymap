@@ -110,12 +110,20 @@
 	gaming+ {
             bindings = <
 		&kp DEL		&kp N1		&kp N2		&kp N3			&kp N4			&none			&none			&none		&none			&none
-		&kp TAB		&mt ALT I	&mt LCTRL M	&mt LGUI G		&ht Y T			&none			&none			&none		&none			&none
+		&lt 6 TAB	&mt LALT I	&mt LCTRL M	&mt LGUI G		&ht Y T			&none			&none			&none		&none			&none
 		&kp PERIOD	&kp N5		&kp N6		&kp N7			&kp N8			&none			&none			&none		&none			&none
 								&trans			&trans			&none			&none			&none		&none			&none
             >;
         };
 
+	gaming++ {
+            bindings = <
+		&none		&none		&kp UP		&none			&none			&none			&none			&none		&none			&none
+		&trans		&kp LEFT	&kp DOWN	&kp RIGHT		&none			&none			&none			&none		&none			&none
+		&none		&none		&none		&none			&none			&none			&none			&none		&none			&none
+								&trans			&trans			&none			&none			&none		&none			&none
+            >;
+        };
 
         hardware {
             bindings = <
