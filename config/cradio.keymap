@@ -20,30 +20,6 @@
         };
     };
 
-
-    combos {
-        compatible = "zmk,combos";
-        
-	combo_gaming {
-            timeout-ms = <50>;
-            key-positions = <0 1 2 3>;
-            bindings = <&tog 4>;
-        };
-        
-        combo_bt_l {
-            timeout-ms = <50>;
-            key-positions = <10 11 12 13>;
-            bindings = <&tog 6>;
-        };
-
-	combo_bt_r {
-	    timeout-ms = <50>;
-	    key-positions = <27 28 29 30>;
-	    bindings = <&tog 6>;
-	};
-    };
-
-
     conditional_layers {
         compatible = "zmk,conditional-layers";
         fn {
@@ -62,16 +38,16 @@
 		&ht ESC Q	&kp W		&kp F		&kp P			&kp B			&kp J			&kp L			&kp U		&kp Y			&kp SEMI
 		&mt TAB A	&mt LALT R	&mt LCTL S	&mt LGUI T		&kp G			&kp M			&mt RGUI N	 	&mt LCTRL E	&mt LALT I		&mt TAB O
 		&kp Z		&kp X		&kp C		&kp D			&kp V			&kp K			&kp H			&kp COMMA	&kp PERIOD		&kp FSLH
-                         					&lt 2 RET		&lt 1 SPACE		&kp BSPC		&kp LSHFT
+                         					&lt 2 RET		&lt 1 SPACE		&kp LSHFT		&kp BSPC
             >;
         };
         
         
         nav {
             bindings = <
-		&kp ESC		&none		&none		&none			&kp LA(F4)		&kp HOME		&kp PG_DN	&kp PG_UP	&kp END		&kp C_VOL_UP
-		&kp TAB		&kp LALT	&kp LCTRL	&kp LGUI		&none			&kp LEFT		&kp DOWN	&kp UP		&kp RIGHT  	&kp C_MUTE
-		&kp INS		&kp RALT	&none		&kp PSCRN		&kp LS(LA(INS))		&none			&none		&none		&none		&kp C_VOL_DN
+		&kp ESC		&none		&none		&none			&kp LA(F4)		&kp HOME		&kp PG_DN	&kp PG_UP	&kp END		&none
+		&kp TAB		&kp LALT	&kp LCTRL	&kp LGUI		&none			&kp LEFT		&kp DOWN	&kp UP		&kp RIGHT  	&none
+		&none		&none		&none		&kp PSCRN		&kp LS(LA(INS))		&none			&kp C_VOL_DN	&kp C_VOL_UP	&kp C_MUTE	&none
 								&trans			&trans			&trans			&kp DEL
             >;
         };
@@ -81,7 +57,7 @@
             bindings = <
 		&kp ESC		&none		&none		&none			&kp GRAVE		&kp RIGHT_BRACKET	&kp N7			&kp N8		&kp N9			&kp APOS
 		&kp TAB		&kp LALT	&kp LCTRL	&kp LGUI		&kp MINUS		&kp LEFT_BRACKET	&kp N4			&kp N5		&kp N6			&kp N0
-		&none		&kp RALT	&none           &none			&none			&kp EQUAL		&kp N1			&kp N2		&kp N3			&kp PIPE
+		&none		&none		&none           &none			&none			&kp EQUAL		&kp N1			&kp N2		&kp N3			&kp PIPE
 								&trans			&trans			&trans			&kp DEL
             >;
         };
@@ -89,42 +65,14 @@
         
         fn {
             bindings = <
-		&kp ESC		&none		&kp UP		&none			&none			&none			&kp F7			&kp F8		&kp F9			&kp F12
-		&kp LCTRL	&kp LEFT	&kp DOWN	&kp RIGHT		&kp LGUI		&none			&kp F4			&kp F5		&kp F6			&kp F11
-		&none		&none		&none		&none			&none			&none			&kp F1			&kp F2		&kp F3			&kp F10
-								&trans			&trans			&kp DEL			&none
+		&kp ESC		&none		&kp UP		&none			&none			&kp INS			&kp F7			&kp F8		&kp F9			&kp F12
+		&kp LCTRL	&kp LEFT	&kp DOWN	&kp RIGHT		&kp LGUI		&kp HOME		&kp F4			&kp F5		&kp F6			&kp F11
+		&none		&none		&none		&none			&none			&kp END			&kp F1			&kp F2		&kp F3			&kp F10
+								&trans			&trans			&none			&kp DEL
             >;
         };
 	
 	
-	gaming {
-            bindings = <
-		&kp ESC		&kp Q		&kp W		&kp E			&kp R			&none			&none			&none		&none			&kp GRAVE
-		&kp LSHFT	&kp A		&kp S		&kp D			&kp F	 		&none			&kp LA(TAB)		&none		&none			&none
-		&kp LCTRL	&kp Z		&kp X		&kp C			&kp G			&none			&none			&none		&none			&none
-								&lt 5 RET		&kp SPACE		&none			&none
-            >;
-        };
-        
-	
-	gaming+ {
-            bindings = <
-		&kp DEL		&kp N1		&kp N2		&kp N3			&kp N4			&none			&none			&none		&none			&none
-		&lt 6 TAB	&mt LALT I	&mt LCTRL M	&mt LGUI G		&ht Y T			&none			&none			&none		&none			&none
-		&kp PERIOD	&kp N5		&kp N6		&kp N7			&kp N8			&none			&none			&none		&none			&none
-								&trans			&trans			&none			&none			&none		&none			&none
-            >;
-        };
-
-	gaming++ {
-            bindings = <
-		&none		&none		&kp UP		&none			&none			&none			&none			&none		&none			&none
-		&trans		&kp LEFT	&kp DOWN	&kp RIGHT		&none			&none			&none			&none		&none			&none
-		&none		&none		&none		&none			&none			&none			&none			&none		&none			&none
-								&trans			&trans			&none			&none			&none		&none			&none
-            >;
-        };
-
         hardware {
             bindings = <
 		&reset		&bootloader	&none		&none			&none			&none			&none			&none		&bootloader		&reset
