@@ -44,7 +44,7 @@
         base {
             bindings = <
 &mt ESC Q  &kp W       &kp F        &kp P       &kp B          &kp J            &kp L           &kp U        &kp Y       &kp SEMI
-&pk TAB A  &mt LALT R  &mt LCTRL S  &mt LGUI T  &kp G          &kp M            &mt LGUI N      &mt LCTRL E  &mt LALT I  &pk TAB O
+&kp A      &kp R       &kp S        &kp T       &kp G          &kp M            &kp N           &kp E        &kp I       &kp O
 &kp Z      &kp X       &kp C        &kp D       &kp V          &kp K            &kp H           &kp COMMA    &kp PERIOD  &kp FSLH
                                     &lt 2 RET   &lt 1 SPACE    &lt 1 BACKSPACE  &kp LEFT_SHIFT
             >;
@@ -61,9 +61,9 @@
 
         num {
             bindings = <
-&kp ESC  &none     &none      &none     &kp GRAVE    &kp RIGHT_BRACKET  &kp N7  &kp N8  &kp N9  &kp APOS
-&kp TAB  &kp LALT  &kp LCTRL  &kp LGUI  &kp MINUS    &kp LEFT_BRACKET   &kp N4  &kp N5  &kp N6  &kp N0
-&none    &none     &none      &none     &none        &kp EQUAL          &kp N1  &kp N2  &kp N3  &kp BSLH
+&kp ESC  &none     &none      &none     &kp GRAVE    &kp RIGHT_BRACKET  &kp N7         &kp N8          &kp N9       &kp APOS
+&kp TAB  &kp LALT  &kp LCTRL  &kp LGUI  &kp MINUS    &kp LEFT_BRACKET   &ht LGUI N4    &ht LCTRL N5    &ht LALT N6  &pk TAB N0
+&none    &none     &none      &none     &none        &kp EQUAL          &kp N1         &kp N2          &kp N3       &kp BSLH
                               &trans    &trans       &kp BACKSPACE      &trans
             >;
         };
